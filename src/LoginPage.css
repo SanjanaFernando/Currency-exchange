@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/src/background.jpg') no-repeat center center fixed; /* Update the path as needed */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.LoginPageContainer {
+  text-align: center;
+}
+
+.MarketTitle {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.LoginPage {
+  max-width: 400px;
+  width: 100%; /* Ensures the box takes up the available width up to max-width */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Slight transparency for a modern look */
+}
+
+.LoginPage h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.LoginPage form {
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginPage label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.LoginPage input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.LoginPage button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.LoginPage button:hover {
+  background-color: #0056b3;
+}
+
+.go-to-signup-button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-signup-button:hover {
+  background-color: #218838;
+}
+
+.LoginPage p {
+  text-align: center;
+  color: red;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .LoginPage {
+    padding: 1rem;
+  }
+
+  .LoginPage input,
+  .LoginPage button {
+    padding: 0.5rem;
+  }
+}
+
+.LoginPage a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.LoginPage a:hover {
+  text-decoration: underline;
+}

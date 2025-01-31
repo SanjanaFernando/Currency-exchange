@@ -1,0 +1,141 @@
+/* Use a modern, clean font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/src/background.jpg') no-repeat center center fixed; /* Update the path as needed */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; /* Apply the font */
+}
+
+/* Background overlay to enhance readability */
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+     /* Semi-transparent background overlay */
+    z-index: -1; /* Place behind other elements */
+}
+
+.SignInPageContainer {
+    text-align: center;
+    color: #ebebeb; /* White text for better contrast */
+}
+
+.MarketTitle {
+    font-size: 2.5rem; /* Slightly larger title */
+    color: #fff; /* White color */
+    margin-bottom: 1.5rem; /* More margin at the bottom */
+    font-weight: 700; /* Bolder text */
+}
+
+.SignInPage {
+    max-width: 400px;
+    width: 100%; /* Ensures the box takes up the available width up to max-width */
+    padding: 2rem; /* More padding for the form */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glassmorphism */
+}
+
+.SignInPage h2 {
+    text-align: center;
+    font-size: 1.75rem; /* Larger subheading */
+    color: #ebebeb;
+    margin-bottom: 1.5rem; /* Space below the heading */
+}
+
+.SignInPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+}
+
+.SignInPage label {
+    margin-bottom: 1.5rem; /* More space between labels */
+    font-weight: 500; /* Slightly bolder labels */
+    width: 100%; /* Ensure label takes full width */
+    text-align: left; /* Align label text to the left */
+}
+
+.SignInPage input {
+    width: 100%;
+    padding: 0.75rem; /* More padding inside input fields */
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Change border color on focus */
+.SignInPage input:focus {
+    border-color: #007bff; /* Highlight input border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.SignInPage button {
+    padding: 0.75rem; /* More padding for button */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+    font-weight: 500; /* Slightly bolder text */
+    width: 100%; /* Ensure button takes full width */
+    margin-top: 1rem;
+}
+
+.SignInPage button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff); /* Reverse gradient on hover */
+}
+
+.go-to-signup-button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.go-to-signup-button:hover {
+    background-color: #218838;
+}
+
+.SignInPage p {
+    text-align: center;
+    margin-top: 1.5rem; /* More space above the paragraph */
+    color: #ff0000; /* Red color for message text */
+    font-size: 1rem;
+}
+
+.SignInPage a {
+    color: #3183ee; /* Bright link color */
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.SignInPage a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .SignInPage {
+        padding: 1.5rem; /* Reduce padding on smaller screens */
+    }
+
+    .MarketTitle {
+        font-size: 2rem; /* Slightly smaller title */
+    }
+}

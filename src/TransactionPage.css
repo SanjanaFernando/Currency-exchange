@@ -1,0 +1,78 @@
+/* Use a modern, clean font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.TransactionPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    font-family: 'Roboto', sans-serif; /* Apply the font */
+}
+
+.TransactionPage h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f51b1b;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.TransactionPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glassmorphism */
+    padding: 20px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+.TransactionPage div {
+    margin-bottom: 15px;
+}
+
+.TransactionPage label {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #fffafa;
+}
+
+.TransactionPage input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Change border color on focus */
+.TransactionPage input:focus {
+    border-color: #007bff; /* Highlight input border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.TransactionPage button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #61dafb, #21a1f1); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+.TransactionPage button:hover {
+    background: linear-gradient(90deg, #21a1f1, #61dafb); /* Reverse gradient on hover */
+}
+
+.TransactionPage p {
+    margin-top: 20px;
+    color: #0f726d;
+    font-size: 18px;
+}

@@ -1,0 +1,68 @@
+/* ExchangeRatesPage.css */
+.ExchangeRatesPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ExchangeRatesPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f51b1b;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ExchangeRatesPage div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.ExchangeRatesPage label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #b8b3b3;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.ExchangeRatesPage input,
+.ExchangeRatesPage select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: calc(100% - 22px);
+}
+
+.ExchangeRatesPage button {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #61dafb, #21a1f1, #1b87c9);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.ExchangeRatesPage button:hover {
+  background-color: #21a1f1;
+}
+
+.ExchangeRatesPage p {
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
